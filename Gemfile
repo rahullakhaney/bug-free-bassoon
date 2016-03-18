@@ -8,7 +8,14 @@ source 'https://d6d3ab6569c17f3096c727610c92818325cd99b4e01486c9:@packagecloud.i
 end
 gem 'sprockets-rails', '2.3.3'
 # Use sqlite3 as the database for Active Record
+group :development, :test do
 gem 'sqlite3'
+end
+
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
+end
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
