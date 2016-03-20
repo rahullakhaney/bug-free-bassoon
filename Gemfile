@@ -37,6 +37,10 @@ gem 'devise'
 gem 'simple_form'
 gem 'awesome_print'
 gem 'figaro'
+gem 'sidekiq'
+gem 'devise-async'
+gem "recaptcha", require: "recaptcha/rails"
+gem "puma"
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
